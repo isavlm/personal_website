@@ -1,0 +1,174 @@
+/*FOR SMALL SCREENS!*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing for vertical layout */
+    }
+
+    nav ul li a {
+        width: 80%; /* Make buttons wider for small screens */
+        text-align: center;
+    }
+    .intro {
+        flex-direction: column;
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .intro .bio {
+    flex: 2; /* Bio text takes more space */
+    margin: 0 20px;
+    color: #E6E6E6;
+}
+
+    .cta {
+        margin-top: 10px;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3; /* Light gray */
+    color:#3C3C3C; /* Darker gray for text for better contrast */
+}
+
+/* Header */
+header {
+    background-color: #5A3E6B; /* Muted purple */
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+header h1 {
+     font-size: 40px; /* Larger font size for your name */
+    margin: 0; /* Remove default margin */
+    font-weight: bold;
+}
+header .slogan {
+    font-size: 20px; /* Slightly smaller font size for the slogan */
+    margin: 5px 0 20px; /* Add spacing between the name and slogan */
+    font-style: italic; /* Italicize the slogan for emphasis */
+    color: #E6E6E6; /* Slightly lighter text for the slogan */
+}
+
+/* MAIN SECTION */
+main {
+    padding: 20px;
+}
+
+/* INTRO SECTION*/
+.intro {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Vertically align items */
+    padding: 20px;
+    color: #3C3C3C; /* Dark gray text for readability */
+    background-color: transparent; /* Makes the background the same as the page */
+    border-radius: 0; /* Removes rounded corners */
+    margin: 20px 0;
+}
+
+.intro .photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular photo */
+    border: 4px solid #5A3E6B; /* Purple border */
+    object-fit: cover; /* Ensures the image fills the circle nicely */
+}
+
+/* BIOSection */
+.intro .bio {
+    flex: 2; /* Takes more space for the bio text */
+    margin: 0 20px; /* Space between photo and bio */
+    color: #3C3C3C; /* Light gray text */
+}
+
+/* CTA Section (Button) aka call to action button */
+.cta {
+    flex: 1; /* Adjusts button width */
+    text-align: center; /* Center-aligns the button */
+}
+
+.cta button {
+    background-color: #5A3E6B; /* Muted purple */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 12px 25px; /* Larger button for emphasis */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta button:hover {
+    background-color: #6D4E7A; /* Slightly lighter purple */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #5A3E6B; /* Same muted purple as the navbar */
+    padding: 15px 0; /* Add vertical padding */
+    text-align: center; /* Center-align text */
+    color: #FFFFFF; /* White text */
+}
+
+footer nav ul {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center links */
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Space between links */
+}
+
+footer nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #FFFFFF; /* White text */
+    text-transform: uppercase; /* Uppercase letters */
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer nav ul li a:hover {
+    color: #D4A5E6; /* Light purple on hover */
+}
+
+    
+/* Navbar Styles */
+
+nav {
+    background-color: #5A3E6B; /* Muted purple */
+    padding: 15px 0; /* Space around the navbar */
+    text-align: center;
+}
+
+nav ul {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Centers the links */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between links */
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White text */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #D4A5E6; /* Light purple on hover */
+}

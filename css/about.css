@@ -1,0 +1,48 @@
+
+
+/* About Me Page */
+.about-me {
+    background-color: #5A3E6B; /* Muted purple */
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.certifications {
+    background-color: #FFFFFF; /* White background */
+    color: #3C3C3C; /* Dark text */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.certifications h2 {
+    margin-bottom: 20px;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between thumbnails */
+}
+
+.certificates-grid a {
+    text-decoration: none; /* Remove link underline */
+}
+
+.certificates-grid img {
+    width: 100%; /* Make the images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for a clean look */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.certificates-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}

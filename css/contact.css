@@ -1,0 +1,59 @@
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 15px; /* Add space between form elements */
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Emphasize labels */
+    margin-bottom: 5px; /* Add spacing below labels */
+}
+
+/* Input and Textarea Styles */
+input,
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Button Styles */
+button {
+    background-color: #5A3E6B; /* Muted purple */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Button */
+button:hover {
+    background-color: #6D4E7A; /* Slightly lighter purple */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    form {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    input,
+    textarea {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
