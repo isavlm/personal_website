@@ -46,3 +46,74 @@
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
+/* DEGRES */
+.degrees p {
+    margin: 10px 0; /* Add spacing between items */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Center-align text */
+}
+/* Learning Now Section */
+.learning-now {
+    text-align: center; /* Center-align content */
+    margin: 30px auto; /* Space around the section */
+    padding: 20px;
+    background-color: #F8F8F8; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Learning Button */
+.learning-button {
+    display: inline-flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align content */
+    padding: 10px 20px;
+    background-color: #5A3E6B; /* Muted purple */
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Learning Button */
+.learning-button:hover {
+    background-color: #6D4E7A; /* Slightly lighter purple */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Learning Icon */
+.learning-icon {
+    width: 20px; /* Adjust size of the icon */
+    height: 20px;
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+/*CSS FOR CERTIFICATION BUTTONS*/
+.certification-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons if the screen is too narrow */
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.cert-button {
+    padding: 10px 20px;
+    background-color: #5A3E6B; /* Muted purple */
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.cert-button:hover {
+    background-color: #6D4E7A; /* Slightly lighter purple */
+    transform: scale(1.05); /* Slight zoom on hover */
+}

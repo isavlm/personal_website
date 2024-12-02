@@ -1,34 +1,3 @@
-/*FOR SMALL SCREENS!*/
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Adjust spacing for vertical layout */
-    }
-
-    nav ul li a {
-        width: 80%; /* Make buttons wider for small screens */
-        text-align: center;
-    }
-    .intro {
-        flex-direction: column;
-        text-align: center; /* Center-align text on smaller screens */
-    }
-
-    .intro .bio {
-    flex: 2; /* Bio text takes more space */
-    margin: 0 20px;
-    color: #E6E6E6;
-}
-
-    .cta {
-        margin-top: 10px;
-    }
-}
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -96,100 +65,50 @@ nav ul li a.active {
     right: 15px;
 }
 
-/* Responsive Navigation for Small Screens */
-@media (max-width: 768px) {
-    .menu-button {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #5A3E6B; /* Match the header background */
-        position: absolute;
-        top: 60px; /* Below the header */
-        right: 15px;
-        padding: 15px;
-        border-radius: 8px;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-/* Banner Styling */
-@media (max-width: 768px) {
-    .banner {
-        height: 180px; /* Reduce height for smaller screens */
-    }
-    .banner-text h1 {
-        font-size: 1.8em;
-    }
-    .banner-text p {
-        font-size: 1em;
-    }
-}
+//* Banner Styling */
 .banner {
     position: relative;
     width: 100%;
-    height: 250px; /* Set height to fit your layout */
-    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    height: 100px;
+    overflow: hidden; /* Ensures no overflow from the image */
 }
 
 .banner img {
-    width: 100%;
+    width: auto
     height: 100%;
-    object-fit: cover; /* Ensures the image fills the container without distortion */
-    object-position: center; /* Centers the image */
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #FFF; /* White text */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
-    padding: 10px 20px;
-    border-radius: 8px;
+    display: block;
+    object-fit: contain; /* Ensures the entire image fits inside the banner */
 }
 
 /* Banner Text Styling */
+.banner-text {
+    position: relative; 
+    text-align: center;
+    color: #5A3E6B; 
+    padding: 20px 0;
+    background-color: #E6E6E6; /* Light background to separate from the banner */
+    border-bottom: 4px solid #5A3E6B; /* Adds a separator line below the text */
+}
+
 .banner-text h1 {
-    font-size: 2.5em; /* Adjust font size */
+    font-size: 2.5em;
     margin: 0;
+    color: #3C3C3C; /* Darker gray */
 }
 
 .banner-text p {
-    font-size: 1.2em; /* Adjust font size */
-    margin: 5px 0 0;
+    font-size: 1.2em;
+    margin: 5px 0;
+    font-style: italic;
+    color: #3C3C3C; /* Darker gray */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .banner {
-        height: 200px; /* Reduce height for smaller screens */
-    }
-
-    .banner-text h1 {
-        font-size: 1.8em; /* Adjust text size for smaller screens */
-    }
-
-    .banner-text p {
-        font-size: 1em;
-    }
-}
 /* MAIN SECTION */
 main {
     padding: 20px;
 }
 
-/* INTRO SECTION*/
+/* INTRO SECTION */
 .intro {
     display: flex; /* Flexbox for horizontal alignment */
     justify-content: space-between; /* Add space between items */
@@ -209,14 +128,14 @@ main {
     object-fit: cover; /* Ensures the image fills the circle nicely */
 }
 
-/* BIOSection */
+/* BIO Section */
 .intro .bio {
     flex: 2; /* Takes more space for the bio text */
     margin: 0 20px; /* Space between photo and bio */
     color: #3C3C3C; /* Light gray text */
 }
 
-/* CTA Section (Button) aka call to action button */
+/* CTA Section (Button) */
 .cta {
     flex: 1; /* Adjusts button width */
     text-align: center; /* Center-aligns the button */
@@ -236,19 +155,6 @@ main {
 .cta button:hover {
     background-color: #6D4E7A; /* Slightly lighter purple */
     transform: scale(1.05); /* Slightly enlarge button on hover */
-}
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .main-section {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        text-align: center; /* Center-align text */
-    }
-
-    .main-section .intro {
-        margin-top: 15px;
-    }
 }
 
 /* Highlighted Sections */
@@ -320,8 +226,67 @@ footer nav ul li a:hover {
     color: #D4A5E6; /* Light purple on hover */
 }
 
-/* Responsive Design for Highlights */
+/* Responsive Styles */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        width: 80%; /* Make buttons wider for small screens */
+        text-align: center;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #5A3E6B; /* Match the header background */
+        position: absolute;
+        top: 60px; /* Below the header */
+        right: 15px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .banner img {
+        height: auto; /* Allow image height to adjust naturally */
+    }
+
+    .banner-text h1 {
+        font-size: 1.8em; /* Smaller text for smaller screens */
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .intro .bio {
+        margin: 0 20px;
+        color: #E6E6E6;
+    }
+
+    .cta {
+        margin-top: 10px;
+    }
+
     .highlighted-sections {
         flex-direction: column;
         align-items: center;
@@ -331,4 +296,3 @@ footer nav ul li a:hover {
         max-width: 90%;
     }
 }
-

@@ -1,3 +1,25 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Center content */
+    padding: 0;
+}
+/* Contact Form Section Styling */
+/* Contact Form Section Styling */
+.contact-form {
+    text-align: center; /* Center-align all content within this section */
+    margin: 0 auto;
+    max-width: 600px; /* Limit the section width for better readability */
+    padding: 20px;
+}
+
+/* Center the Heading */
+.contact-form h2 {
+    text-align: center; /* Ensures the heading is centered */
+    font-size: 1.8em; /* Adjust font size for emphasis */
+    color: #5A3E6B; /* Muted purple to match the theme */
+    margin-bottom: 20px; /* Add space below the heading */
+}
 /* Form Container */
 form {
     display: flex;
@@ -5,6 +27,7 @@ form {
     gap: 15px; /* Add space between form elements */
     max-width: 400px; /* Limit form width */
     margin: 0 auto; /* Center the form */
+    padding: 10px; /* Add padding for spacing */
 }
 
 /* Label Styles */
@@ -21,6 +44,16 @@ textarea {
     border: 1px solid #ccc; /* Light border */
     border-radius: 5px; /* Rounded corners */
     font-size: 14px; /* Adjust font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Focus Effect for Inputs */
+input:focus,
+textarea:focus {
+    border-color: #5A3E6B; /* Match the button color */
+    box-shadow: 0 0 5px rgba(90, 62, 107, 0.5); /* Subtle glow */
+    outline: none; /* Remove default outline */
 }
 
 /* Button Styles */
@@ -32,17 +65,70 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Hover Effect for Button */
 button:hover {
     background-color: #6D4E7A; /* Slightly lighter purple */
     transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
-/* Mobile Responsiveness */
+/* Connect Section */
+.connect-section {
+    text-align: center; /* Center-align both sections */
+    margin: 20px auto; /* Add spacing */
+    padding: 15px;
+}
+
+/* LinkedIn and Calendly Icon Styling */
+.connect-icon {
+    width: 40px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Space between icon and button */
+    display: block; /* Ensure proper alignment */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Icons */
+.connect-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* LinkedIn and Calendly Button Styling */
+.connect-button {
+    display: inline-flex;
+    padding: 10px 10px;
+    background-color: #5A3E6B; /* Purple */
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Buttons */
+.connect-button:hover {
+    background-color: #6D4E7A; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Styles */
+/* For Smaller Screens */
 @media (max-width: 480px) {
+    .connect-icon {
+        width: 30px; /* Smaller icons on mobile */
+    }
+
+    .connect-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
     form {
         padding: 10px; /* Add padding for smaller screens */
     }
@@ -55,5 +141,16 @@ button:hover {
     button {
         font-size: 14px;
         padding: 8px 15px;
+    }
+}
+
+/* For Larger Screens */
+@media (min-width: 1024px) {
+    form {
+        max-width: 600px; /* Increase form width for larger screens */
+    }
+
+    .connect-section {
+        margin-top: 50px; /* Increase spacing above Connect section */
     }
 }

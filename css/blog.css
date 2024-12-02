@@ -1,0 +1,97 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+header {
+    background-color: #5A3E6B;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h1, section h2 {
+    color: #5A3E6B;
+}
+
+ul {
+    list-style: none; /* Remove dots */
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #5A3E6B;
+}
+
+/* Progress Bars */
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #5A3E6B;
+    border-radius: 5px;
+}
+
+/* Blog Navigation */
+.blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blog-navigation a {
+    color: #5A3E6B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #5A3E6B;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
